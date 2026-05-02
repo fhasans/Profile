@@ -2,6 +2,7 @@ import React from 'react';
 import { Code2, ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
 import { Reveal } from '../common/Reveal';
 import { useTypingEffect } from '../../hooks/useTypingEffect';
+import profileImg from '../../assets/FINAL.png';
 
 export const Hero = () => {
     const typedRole = useTypingEffect("Frontend Developer", 100);
@@ -67,7 +68,7 @@ export const Hero = () => {
                     {/* Border animasi dan kontainer gambar */}
                     <div className="relative w-56 h-56 md:w-80 md:h-80 rounded-full p-1 border-2 border-teal-500/30 group-hover:border-teal-400 transition-colors duration-500 shadow-[0_0_30px_rgba(20,184,166,0.1)] group-hover:shadow-[0_0_40px_rgba(20,184,166,0.4)]">
                         <img
-                            src="https://lh3.googleusercontent.com/d/1C5CTwCTfTGwgY2m30Tx7F_daF6k3co8O"
+                            src={profileImg}
                             alt="Fathin Satriani Hasan"
                             className="w-full h-full object-cover rounded-full bg-gray-800"
                             // Jika gambar gagal dimuat, tampilkan placeholder
