@@ -29,8 +29,8 @@ export const Experience = () => {
                                         <ChevronDown size={18} className="text-gray-500 group-hover:text-teal-400 group-hover:rotate-180 transition-all duration-500" />
                                     </div>
                                 </div>
-                                <div className="mt-2 md:mt-0 text-sm text-gray-400 bg-gray-800/80 px-4 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap font-medium">
-                                    Feb 2026 - Apr 2026 | Jakarta
+                                <div className="mt-3 md:mt-0 text-sm text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full w-max border border-gray-700">
+                                    02/2026 - 04/2026 | Jakarta
                                 </div>
                             </div>
 
@@ -73,8 +73,8 @@ export const Experience = () => {
                                         <ChevronDown size={18} className="text-gray-500 group-hover:text-teal-400 group-hover:rotate-180 transition-all duration-500" />
                                     </div>
                                 </div>
-                                <div className="mt-2 md:mt-0 text-sm text-gray-400 bg-gray-800/80 px-4 py-1.5 rounded-lg border border-gray-700 whitespace-nowrap font-medium">
-                                    Apr 2022 - Sep 2025 | Jakarta
+                                <div className="mt-3 md:mt-0 text-sm text-gray-400 bg-gray-800/50 px-3 py-1 rounded-full w-max border border-gray-700">
+                                    04/2022 - 09/2025 | Jakarta
                                 </div>
                             </div>
 
