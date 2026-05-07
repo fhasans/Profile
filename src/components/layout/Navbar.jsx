@@ -1,5 +1,6 @@
 import React from 'react';
-import { Github } from 'lucide-react';
+import { Github, Download } from 'lucide-react';
+import cvFile from '../../assets/Fathin_Satriani_Hasan_CV.pdf';
 
 export const Navbar = () => {
     const scrollToSection = (id) => {
@@ -25,13 +26,23 @@ export const Navbar = () => {
                     </button>
                 ))}
             </div>
+            {/* Desktop: Download CV button */}
             <a
-                href="https://github.com/fhasans"
-                target="_blank"
-                rel="noreferrer"
-                className="md:hidden text-teal-400 hover:text-teal-300"
+                href={cvFile}
+                download="Fathin_Satriani_Hasan_CV.pdf"
+                className="hidden md:flex items-center gap-2 px-4 py-2 bg-teal-500/10 text-teal-400 border border-teal-500/40 rounded-md text-sm font-medium hover:bg-teal-500 hover:text-gray-900 transition-all shadow-[0_0_12px_rgba(20,184,166,0.15)] hover:shadow-[0_0_20px_rgba(20,184,166,0.4)] group"
             >
-                <Github size={24} />
+                <Download size={15} className="group-hover:-translate-y-0.5 transition-transform" />
+                Download CV
+            </a>
+            {/* Mobile: icon-only */}
+            <a
+                href={cvFile}
+                download="Fathin_Satriani_Hasan_CV.pdf"
+                className="md:hidden p-2 text-teal-400 hover:text-teal-300 transition-colors"
+                title="Download CV"
+            >
+                <Download size={22} />
             </a>
         </nav>
     );

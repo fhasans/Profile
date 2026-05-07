@@ -1,5 +1,6 @@
 import React from 'react';
-import { Code2, ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Code2, ChevronDown, Github, Linkedin, Mail, Download } from 'lucide-react';
+import cvFile from '../../assets/Fathin_Satriani_Hasan_CV.pdf';
 import { Reveal } from '../common/Reveal';
 import { useTypingEffect } from '../../hooks/useTypingEffect';
 import profileImg from '../../assets/FINAL.png';
@@ -45,6 +46,14 @@ export const Hero = () => {
                     >
                         View Experience <ChevronDown size={18} />
                     </button>
+                    <a
+                        href={cvFile}
+                        download="Fathin_Satriani_Hasan_CV.pdf"
+                        className="px-8 py-3 bg-gradient-to-r from-teal-500 to-blue-500 text-gray-900 rounded-md font-semibold hover:from-teal-400 hover:to-blue-400 transition-all shadow-[0_0_20px_rgba(20,184,166,0.3)] hover:shadow-[0_0_35px_rgba(20,184,166,0.6)] flex items-center gap-2 group"
+                    >
+                        <Download size={18} className="group-hover:-translate-y-0.5 transition-transform" />
+                        Download CV
+                    </a>
                     <div className="flex items-center gap-4 md:ml-2">
                         <a href="https://github.com/fhasans" target="_blank" rel="noreferrer" className="p-3 bg-gray-800/50 rounded-md border border-gray-700 hover:border-teal-500 hover:text-teal-400 transition-colors">
                             <Github size={20} />
